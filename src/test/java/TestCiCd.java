@@ -5,12 +5,12 @@ public class TestCiCd {
     @Test
     public void testAdd() {
         Calculator calc = new Calculator();
-        assertEquals(calc.add(5, 3), 12);
+        assertEquals(calc.add(5, 3), 8);
     }
 
     @Test
     public void testSubtract(){Calculator calc = new Calculator();
-        assertEquals(calc.subtract(5, 2), 6);
+        assertEquals(calc.subtract(5, 2), 3);
     }
 
     @Test
@@ -18,6 +18,13 @@ public class TestCiCd {
         Calculator calc = new Calculator();
         assertEquals(calc.multiply(6, 5), 30);
     }
+
+    @Test
+    public void testDivide(){
+        Calculator calc = new Calculator();
+        assertEquals(calc.divide(6, 2), 3);
+    }
+
 
     @Test(expectedExceptions = ArithmeticException.class)
     public void testDivideByZero() {
