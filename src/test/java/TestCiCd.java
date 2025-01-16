@@ -5,12 +5,12 @@ public class TestCiCd {
     @Test
     public void testAdd() {
         Calculator calc = new Calculator();
-        assertEquals(calc.add(5, 3), 8);
+        assertEquals(calc.add(5, 3), 12);
     }
 
     @Test
     public void testSubtract(){Calculator calc = new Calculator();
-        assertEquals(calc.subtract(5, 2), 3);
+        assertEquals(calc.subtract(5, 2), 6);
     }
 
     @Test
