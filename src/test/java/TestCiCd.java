@@ -5,7 +5,7 @@ public class TestCiCd {
     @Test
     public void testAdd() {
         Calculator calc = new Calculator();
-        assertEquals(calc.add(5, 3), 8);
+        assertEquals(calc.add(5, 3), 5);
     }
 
     @Test
